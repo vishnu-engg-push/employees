@@ -1,6 +1,6 @@
 ### Sample Go Application using MongoDB and Redis
 
-This is a sample go application using mongoDB as database and redis as cache. The CRUD API is written for both database and redis.
+This is a sample go application using mongoDB as database and redis as cache. The CRUD API is written for both mongo and redis.
 
 #### Requirements to run the application in local:
 1. **Go** - tested on go version 1.15.3, the latest stable go version at the time of the writing. Ideally, the go version should be at least 1.11+.
