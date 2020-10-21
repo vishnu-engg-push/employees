@@ -1,4 +1,4 @@
-### Sample Go Application
+### Sample Go Application using MongoDB and Redis
 
 This is a sample go application using mongoDB as database and redis as cache. The CRUD API is written for both database and redis.
 
