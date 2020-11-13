@@ -47,14 +47,7 @@ func AddPersonInDB(c *gin.Context) {
 	var person models.Person
 	c.BindJSON(&person)
 
-	newPerson := models.Person{
-		Id:      person.Id,
-		Name:    person.Name,
-		Active:  person.Active,
-		Address: person.Address,
-	}
-
-	_, err := collection.InsertOne(ctx, newPerson)
+	_, err := collection.InsertOne(ctx, person)
 
 	if err != nil {
 		log.Printf("Error while inserting new person into db, Reason: %v\n", err)
